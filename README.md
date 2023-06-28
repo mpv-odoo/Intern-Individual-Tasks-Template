@@ -1,6 +1,5 @@
 # [Tetragram] - [Task Name]
 [Link](url) to task
-- mo
 
 ## Steps to complete the dev
 - [X] Step 1
