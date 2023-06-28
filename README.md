@@ -6,9 +6,14 @@
 - [ ] Step 2
 
 ## Issues/Blocking Points
+- [X] Issue #1
+- [ ] 
 
-## Topics/Steps I'm stuck on
-- 
-
+## Topics I need clarification on
+- [X] Topic #1
+      
 ## Interns who helped me
-- [tetragram]-[name]
+- [tetragram] - [# minutes helped] - [What they helped on]
+
+## Interns I helped
+- [tetragram] - [# minutes helped]
