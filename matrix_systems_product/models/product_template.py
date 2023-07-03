@@ -15,13 +15,12 @@ class ProductTemplate(models.Model):
     def create(self, vals_list):
         for vals in vals_list:
             if vals.get('reference_no', ('New')) == ('New'):
-                vals['reference_no'] = self.env['ir.sequence'].next_by_code('barcode.sequence')
+                vals['reference_no'] = self.env['ir.sequence'].next_by_code('barcode.sequence.matrix')
         return super().create(vals_list)
 
     @api.depends('product_variant_ids.barcode','product_group')
     def _compute_barcode(self):
-        for record in self:
-            print("LOLWA")
+        for record in self:            
             barcode=str(record.product_group)[0:2]+"."+record.reference_no
-            print(barcode)
-            record.barcode = barcode
+
+            record.barcode = f"{str(record.product_group)[0:2]}.{record.reference_no}"
